@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+        /* Visit https://aka.ms/tsconfig.json to read more about this file */
+        "target": "esnext",
+        "module": "commonjs",
+        "strictNullChecks": false,
+        "strict": true,
+        "resolveJsonModule": true,
+        "jsx": "preserve",
+        "noImplicitAny": false,
+        "importHelpers": true,
+        "moduleResolution": "node",
+        "outDir": "build",
+        "removeComments": true,
+        "rootDir": "src",
+        "experimentalDecorators": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "sourceMap": false,
+        "baseUrl": ".",
+        "types": ["node"],
+        "paths": {
+            "@/*": ["src/*"]
+        },
+        "lib": ["esnext"]
+    },
+    "exclude": ["node_modules"],
+    "include": ["src/**/*.*"]
+}
