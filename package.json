@@ -1,0 +1,11 @@
+{
+  "name": "generate-file",
+  "version": "0.0.1",
+  "description": "根据JSON结构创建目录",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "FF",
+  "license": "ISC"
+}
