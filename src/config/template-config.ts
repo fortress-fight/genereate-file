@@ -29,7 +29,7 @@ export default {
             template: getPath(["../template/config/.browserslistrc"]),
         },
         gitignore: {
-            name: "eslint",
+            name: "gitignore",
             template: getPath(["../template/config/.gitignore"]),
         },
         eslint: {
