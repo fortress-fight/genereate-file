@@ -2,7 +2,7 @@
  * @Description:
  * @Author: Fu Fei
  * @Date: 2020-08-05 11:45:53
- * @LastEditTime: 2020-12-17 20:39:45
+ * @LastEditTime: 2020-12-18 15:18:58
  * @LastEditors: Fu Fei
  * @FilePath: \generate-file\.eslintrc.js
  */
@@ -19,10 +19,10 @@ module.exports = {
         node: true,
     },
     extends: [
+        "eslint:recommended",
         "plugin:@typescript-eslint/recommended",
         "prettier/@typescript-eslint",
         "plugin:prettier/recommended",
-        "eslint:recommended",
     ],
     rules: {
         "prettier/prettier": "off",
