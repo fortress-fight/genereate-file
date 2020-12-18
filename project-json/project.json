@@ -1,5 +1,6 @@
 {
     "name": "test-project",
+    "author": "FF",
     "tree": {
         "desc": "# $0",
         "src": {            
@@ -36,5 +37,6 @@
             ".nvmrc",
             "webpack.config.js"
         ]
-    }
+    },
+    "plugins": ["tslint"]
 }
