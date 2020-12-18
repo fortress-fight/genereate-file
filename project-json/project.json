@@ -1,0 +1,42 @@
+{
+    "name": "test-project",
+    "author": "FF",
+    "tree": {
+        "desc": "# $0",
+        "src": {            
+            "typings": {
+                "files": ["global.d.ts"]
+            },
+            "api": {
+                "files": ["api.outer.ts"]
+            },
+            "config": {
+                "files": ["config.global.json"]
+            },
+            "lib": {
+                "desc": "存放第三方文件",
+                "script": {},
+                "style": {},
+                "fonts": {}
+            },
+            "resource": {
+                "imgs": {},
+                "media": {}
+            },
+            "pages": {
+                "index": {
+                    "files": ["index.html", "entry.ts"]
+                },
+                "files": [{
+                    "name": "app.ts",
+                    "data": "// 页面的公共文件"
+                }]
+            }
+        },
+        "files": [
+            ".nvmrc",
+            "webpack.config.js"
+        ]
+    },
+    "plugins": ["tslint"]
+}
