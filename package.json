@@ -8,7 +8,7 @@
         "dev": "ts-node ./src/app.ts",
         "test": "rimraf ./dist && ts-node ./src/app.ts -o=./dist -f=./project-json/project.json",
         "test-build": "rimraf ./dist && node ./build/app.js -o=./dist -f=./project-json/project.json",
-        "lint": "eslint ./src/**/*.{js,ts,tsx}"
+        "lint": "eslint ./src/**/*.{js,ts,tsx} -c ./.eslintrc.js  --rule \"no-console: ['warn', { allow: ['warn', 'error'] }]\" --fix"
     },
     "author": "FF",
     "license": "ISC",

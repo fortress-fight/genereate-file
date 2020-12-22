@@ -2,9 +2,9 @@
  * @Description:
  * @Author: Fu Fei
  * @Date: 2020-08-05 11:45:53
- * @LastEditTime: 2020-12-22 11:00:24
+ * @LastEditTime: 2020-12-22 11:02:26
  * @LastEditors: Fu Fei
- * @FilePath: \generate-file\.eslintrc.js
+ * @FilePath: \generate-file\src\template\project\single-project\.eslintrc.js
  */
 module.exports = {
     root: true,
