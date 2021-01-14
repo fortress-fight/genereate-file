@@ -1,0 +1,96 @@
+// start flex-layout
+.flex_inline {
+    display: inline-flex;
+}
+
+.flex,
+.flex_xl,
+.flex_xc,
+.flex_xr,
+.flex_yt,
+.flex_cc,
+.flex_center,
+.flex_yc {
+    display: flex;
+}
+
+.flex_yc {
+    align-items: center;
+}
+
+.flex_xl {
+    justify-content: flex-start;
+}
+.flex_xr {
+    justify-content: flex-end;
+}
+
+.flex_xc {
+    justify-content: center;
+}
+
+.flex_cc {
+    align-items: center;
+    justify-content: center;
+}
+
+.flex_sb {
+    justify-content: space-between;
+}
+
+.flex_yt {
+    align-items: flex-start;
+}
+
+.flex_center {
+    align-items: center;
+    justify-content: center;
+}
+
+.flex_dir_col {
+    flex-direction: column;
+}
+.flex_fix {
+    flex: 0 0 auto;
+}
+
+.flex_auto {
+    flex: 1 1 auto;
+}
+
+@for $num from 1 through 24 {
+    .flex_#{$num} {
+        width: #{$num}px;
+    }
+}
+
+// end flex-layout
+
+// start grid-layout
+
+.layout_grid {
+    display: grid;
+
+    &_yc {
+        display: grid;
+
+        align-items: center;
+    }
+}
+@for $num from 1 through 24 {
+    .layout_grid-colspac-#{$num} {
+        grid-column-gap: #{$num}px;
+    }
+
+    .layout_grid-rowspac-#{$num} {
+        grid-row-gap: #{$num}px;
+    }
+
+    .layout_grid-col-#{$num} {
+        grid-template-columns: repeat($num, 1fr);
+    }
+
+    .layout_grid-item_clo-#{$num} {
+        grid-column-start: span $num;
+    }
+}

@@ -1,0 +1,108 @@
+/*
+ * @Description: 私有的样式重置文件
+ * @Author: Fu Fei
+ * @Date: 2020-08-12 15:30:52
+ * @LastEditTime: 2020-12-29 01:10:12
+ * @LastEditors: Fu Fei
+ * @FilePath: /uemo-project/src/style/reset.scss
+ */
+
+// start 消除 fix 固定定位 滚动条站位的影响
+:root {
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    scroll-behavior: smooth;
+}
+
+:root body {
+    position: absolute;
+}
+html {
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    height: 100%;
+
+    scroll-behavior: smooth;
+}
+
+// end 消除 fix 固定定位 滚动条站位的影响
+html {
+    font-size: 12px;
+
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, "微软雅黑";
+
+    // overflow: hidden;
+
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+
+    scroll-behavior: smooth;
+}
+
+img {
+    content: normal !important;
+    vertical-align: top;
+}
+i {
+    font-style: normal;
+}
+a {
+    display: inline-block;
+
+    text-decoration: none;
+
+    color: inherit;
+}
+
+input::placeholder {
+    color: #ccc !important;
+}
+input {
+    -webkit-appearance: none;
+}
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none; //此处只是去掉默认的小×
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset !important;
+}
+
+a[herf=""] {
+    cursor: default;
+}
+
+.button {
+    cursor: pointer;
+}
+
+.no_link {
+    cursor: default;
+}
+
+.hide {
+    display: none;
+}
+.ic {
+    font-size: inherit;
+    line-height: inherit;
+
+    display: inline-block;
+
+    vertical-align: top;
+
+    color: inherit;
+
+    font-display: auto;
+}
+
+.text-capitalize {
+    text-transform: capitalize;
+}
